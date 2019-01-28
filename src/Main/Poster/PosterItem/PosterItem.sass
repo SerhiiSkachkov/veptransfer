@@ -1,0 +1,130 @@
+.poster-name
+	font-size: 26px
+	font-weight: 300
+
+.poster-descr
+	font-size: 13px
+	min-height: 100px
+
+.poster-inform
+	font-size: 13px
+
+.poster-inform-box
+	padding: 10px 0px
+
+.poster-inform-item
+	display: flex
+
+.poster-inform-about,
+.poster-inform-output
+	width: 50%
+
+.poster-inform-rating
+	width: 119px
+
+.poster-inform-about
+	padding-right: 5px
+
+.poster-inform-output
+	padding-left: 5px
+.poster-inform-rating
+	margin-left: 5px
+
+.poster-inform-rating
+	width: 119px
+	position: relative
+	background: url(./poster_raiting_gray.png) center left repeat-x/auto
+
+.btn-add
+	background: linear-gradient(to bottom, #fefcea 0%, #f1da40 100%)
+	color: black
+	border-radius: 3px
+	width: 100%
+	font-weight: 200
+	text-align: center
+	padding: 10px
+	font-size: 18px
+	max-width: 250px
+	border: 1px solid #f1da36
+	&:hover
+		box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.75)	
+
+.poster-price-box
+	text-align: center
+
+.poster-price
+	font-weight: 300
+	text-align: center
+	font-size: 	28px
+	padding: 10px 0px
+	span
+		font-weight: 500 
+		font-size: 35px
+
+@keyframes widthchange
+	from
+		width: 0px
+	to
+		width
+
+.poster-inform-rating-animate
+	animation-name: widthchange
+	animation-delay: 0s
+	animation-duration: 4s
+	animation-timing-function: ease-out
+	
+.poster-inform-rating-output
+	width: 0
+	height: 100%
+	position: relative
+	background: url(./poster_raiting_orange.png) center left repeat-x/auto
+
+
+@media(min-width: 540px)
+	.poster-inform
+		font-size: 15px
+	.poster-descr
+		font-size: 15px
+		min-height: 60px
+	.poster-price-box
+		display: flex
+		align-items: center
+		justify-content: space-between
+	.btn-add
+		height: 40px
+		margin-right: calc(50% - 250px)
+
+@media(min-width: 768px)
+	.poster-name
+		font-size: 35px
+
+@media(min-width: 992px)
+	.poster-about
+		padding-top: 40px
+	.poster-name
+		margin-bottom: 15px
+	.poster-item
+		display: flex
+	.poster-price-box
+		display: block
+		padding-right: 40px
+	.poster-inform
+		padding-right: 40px
+	.btn-add
+		margin: 0 auto
+		width: 277px
+	.poster-img
+		order: 2
+	.poster-about
+		width: 44%
+		max-width: 350px
+		order: 1
+@media(min-width: 1199px)
+	.poster-price span
+		font-size: 55px
+	.poster-item
+		justify-content: space-between
+	.poster-about
+		padding-top: 40px
+	.poster-img
+		width: 65%

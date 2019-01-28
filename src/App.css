@@ -1,0 +1,38 @@
+.App-root {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+	background-color: #f2f2f2;
+  position: relative;
+}
+
+.wrapper {
+  	width: 100%;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto; }
+
+@media (min-width: 576px) {
+  	.wrapper {
+    	max-width: 540px; 
+    } 
+}
+
+@media (min-width: 768px) {
+  	.wrapper {
+    	max-width: 720px; 
+    } 
+}
+
+@media (min-width: 992px) {
+  	.wrapper {
+    	max-width: 960px; 
+    } 
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    	max-width: 1170px; 
+    } 
+}

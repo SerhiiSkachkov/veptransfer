@@ -1,0 +1,25 @@
+input:checked+.request-radio-group-lbl
+	opacity: 1
+
+input:checked+.request-radio-group-lbl:after
+	width: 100%
+	background: url('../Request_lbl_check.png') center top no-repeat/auto
+
+.request-radio-group-lbl
+	position: relative
+	color: white
+	opacity: 0.3
+	transition: 0.4S
+	width: 20%
+	&:hover
+		opacity: 1
+		cursor: pointer
+	&:after
+		content: ''
+		position: absolute
+		bottom: -30px
+		left: 0px
+		width: 100%
+		height: 30px
+		transition: 0.4S
+		width: 0px

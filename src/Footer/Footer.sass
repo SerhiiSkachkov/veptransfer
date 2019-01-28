@@ -1,0 +1,99 @@
+.footer
+	padding: 20px 0px 10px
+	background: url('./Footer_bg.jpg') center top repeat-y/contain
+
+.footer-box
+	display: flex
+	flex-flow: wrap
+
+.footer-promo
+	order: 3
+	margin: 0 auto
+
+.footer-contact,
+.footer-def
+	display: block
+	color: gray
+	margin-bottom: 5px
+	text-align: center
+
+.footer-btn
+	order: 1
+	display: block
+	width: 120px
+	height: 120px
+	margin: 0 auto
+	background: url('./Footer_startstop.png') center top no-repeat/cover
+	transition: 0.0s
+	&:hover
+		cursor: pointer
+		background: url(/static/media/Footer_startstop.de5bdd2a.png) center no-repeat/cover
+
+.footer-contact:hover
+	color: #f7af1f
+
+.footer-nav
+	order: 2
+	text-align: center
+	display: block
+	width: 100%
+	padding: 20px 0px
+
+.footer-nav a
+	padding: 5px 10px
+	color: #f7af1f
+	font-size: 18px
+	text-align: center
+	&:hover
+		color: white
+
+.footer-nav span
+	display: none
+
+@media(min-width: 768px)
+	.footer-box
+		justify-content: space-between
+	.footer-logo
+		width: 220px
+		margin-bottom: 5px
+	.footer-nav
+		display: flex
+		justify-content: space-between
+		order: 1
+	.footer-nav span
+		display: inline-block
+		color: #f7af1f
+	.footer-nav a
+		padding-right: 15px
+	.footer-promo
+		margin: 0px
+		order: 2
+	.footer-btn
+		order: 3
+		margin: 0px
+	.footer-contact,
+	.footer-def
+		text-align: left
+
+@media(min-width: 992px)
+	.footer-nav
+		padding-top: 10px
+		order: 3
+		width: 540px
+	.footer-nav a
+		padding-right: 10px
+		font-size: 15px
+	.footer-promo
+		padding-top: 10px
+		order: 1
+	.footer-btn
+		order: 2
+	.footer-contact,
+	.footer-def
+		text-align: left
+
+@media(min-width: 1199px)
+	.footer-nav
+		width: 580px
+	.footer-nav a
+		font-size: 16px

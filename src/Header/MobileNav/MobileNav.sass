@@ -1,0 +1,28 @@
+.header-mobile-nav
+	width: 80%
+	max-width: 450px
+	position: absolute
+	z-index: 99
+	background-color: #f3f3f3
+	transition: 0.5s
+	top: 0px
+	left: -100%
+	border-right: 1px solid gray
+	height: 100vh
+	padding: 20px 0px
+	@media(min-width: 768px)
+		display: none
+
+.header-mobile-nav li
+	margin-bottom: 10px
+	font-size: 18px
+
+.header-mobile-nav a
+	display: block
+	padding: 0px 15px
+	color: black
+	&:hover
+		background-color: #ffe94d
+
+.header-mobile-nav--open
+	left: 0px
